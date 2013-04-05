@@ -1,0 +1,23 @@
+/* 
+William Hamilton
+VFW 0113 Project 4
+CSS Stylesheet for additem.html and index.html
+*/
+
+
+#feature {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#brands .ui-grid-a div {
+	text-align: center;
+}
+
+label.error {
+	display:block; margin:10px 0; color:red;
+}
+#formerrorslink {
+	display: none;
+	
+}

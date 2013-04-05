@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- William Hamilton -->
+<!-- MIU 1302 -->
+<!-- Project 3 for MIU -->
+<!-- ADDITEM.HTML document -->
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta keywords="Home Design App" />
+		<meta name="description" content="Home Design App that helps you put together home furnishings like a designer." />
+		<meta name="robots"	content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Add an Item</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+	<body>
+	<header><h1>Personal Profile</h1></header>
+		<form action="#" method="post" id="designForm">
+			<fieldset>
+				<legend>Information</legend>
+				<span>* fields are required</span>
+				<ul id="errors"></ul>
+				<ul id="questions">
+					<li><label for="fname">*First Name:</label><input type="text" id="fname" /></li>
+					<li><label for="lname">*Last Name:</label><input type="text" id="lname" /></li>
+					<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
+					<li><label for="cpword">Confirm Password:</label><input type="password" id="cpword" /></li>
+					<li><label for="email">*Email:</label><input type="email" id="email" placeholder="example@email.com" /></li>
+				</ul>
+			</fieldset>
+			<h2>Add an Item</h2>
+			<fieldset>
+				<ul>
+				<legend>Details of Item</legend>
+				
+				<!-- Option Group -->
+					<li id="select"><label for="cats">*Add an Item: </label><br /></li>
+											
+					<!-- Date -->
+					<li>
+						<label for="startdate">Please enter the date:</label><input type="date" id="startdate" name="startdate" placeholder="2013-01-10" />
+					</li>
+					
+					<!-- Checkboxes -->
+					<li>Check all that apply:
+						<ul>
+							<li><input type="checkbox" value="Bedroom" id="bedroom" class="checkbox" name="rooms" /><label for="bedroom">Bedroom</label></li>
+							<li><input type="checkbox" value="Dining Room" id="diningroom" class="checkbox" name="rooms" /><label for="diningroom">Dining Room</label></li>
+							<li><input type="checkbox" value="Bathroom" id="bathroom" class="checkbox" name="rooms" /><label for="bathroom">Bathroom</label></li>
+							<li><input type="checkbox" value="Living Room" id="livingroom" class="checkbox" name="rooms" /><label for="livingroom">Living Room</label></li>
+							<li><input type="checkbox" value="Kitchen" id="kitchen" class="checkbox" name="rooms" /><label for="kitchen">Kitchen</label></li>
+						</ul>
+					
+					<!-- Range -->
+					<li>Price of Item:
+						<ul>
+							<li><label for="price">The price of the item is:</label><input type="range" min="10" max="1000" id="price" />
+							</li> 
+						</ul>
+						
+						<!-- Textarea -->
+						<li><label for="comments">Notes:</label><textarea id="comments">Type notes here.</textarea></li>
+						
+						<!-- Hidden -->
+						<li><input type="hidden" value="true" /></li>	
+					</ul>
+				</fieldset>
+			
+			<!-- Submit -->
+			<input type="button" id="button" value="Finished!" />
+		</form>
+		<a href="#" id="clearLink">Clear Stored Data</a>
+		<a href="#" id="showLink">Display Data</a>
+		<a href="additem.html" id="pushNew" style="display:none;">Add Another Item</a>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

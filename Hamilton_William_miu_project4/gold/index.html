@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- William Hamilton -->
+<!-- MIU 1302 -->
+<!-- Project 4 for MIU -->
+<!-- INDEX.HTML document -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<!--Document Title-->
+		<title>Home Design App</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /><!--Date plugin-->
+		<link rel="stylesheet" href="css/themes/MIU.min.css" />
+		 
+		
+		<!-- Modernizr -->
+		<script src="js/libs/modernizr.custom.12668.js"></script>
+		
+	</head>
+	
+	<!-- Document Body -->
+	<body>
+		
+		<!--Home Page-->
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div id="feature">
+				<!-- Link to additem.html HTML page -->
+				<a href="#addItem"><img src="img/Feature.png"></a>
+			</div>
+			
+			<div data-role="listview" data-filter="true">
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Browse other items</h3>
+						
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Appliance</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Bedding</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Fabric</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Flooring</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Furniture</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="error.html">Lighting</a></li>
+				</nav>
+			</div>
+			
+			<div data-role="listview" id="main"><!--Clear and Display Links-->
+					<a href="#display" id="displayData" data-role="button" data-theme="a" data-icon="refresh" data-iconpos="right">Display Info</a>
+					<a href="#" id="clear" data-role="button" data-theme="a" data-icon="delete" data-iconpos="right">Clear Info</a>
+			</div>
+			
+			<div data-role="navbar" data-position="fixed" data-id="home" data-theme="a">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#brands "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Info Page-->
+		<div data-role="page" id="info" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div>
+				<nav>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="#credits">Credits</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="#author">Author Info</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="../bronze/index.html">Bronze App</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="https://github.com/wchamil/mdv-projects/tree/gh_pages/Hamilton_William_miu_project4/bronze">Bronze gh-pages</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="https://github.com/wchamil/mdv-projects/tree/gh_pages/Hamilton_William_miu_project4/gold">Gold gh-pages</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="https://github.com/wchamil/mdv-projects">Github Repo</a></li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Credits Page -->
+		<div data-role="page" id="credits" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html"><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div>
+				<nav>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="http://www.smithbrothers.net/">Smith Brothers of Berne</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.hookerfurniture.com/">Hooker Furniture</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="http://www.serta.com/index.html">Serta Bedding</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.lexington.com/">Lexington Home Brands</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b"><a href="http://furninfo.com/">Furniture World Magazine</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.furnituretoday.com/">Furniture Today</a></li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Author Page -->
+		<div data-role="page" id="author" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html"><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div data-role="listview">
+				<nav data-role="collapsible" data-collapsed="true" data-theme="b">
+					<h3>Name</h3>
+						<li data-role="button">William Cutler Hamilton</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="b">
+					<h3>Hobbies</h3>
+						<li data-role="button">Cooking</li>
+						<li data-role="button">Brewing Beer</li>
+						<li data-role="button">Politics</li>
+						<li data-role="button">College Football</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="b">
+					<h3>Favorite Movies</h3>
+						<li data-role="button">Goodfellas</li>
+						<li data-role="button">Bullitt</li>
+						<li data-role="button">Inception</li>
+						<li data-role="button">The Dark Knight</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="b">
+					<h3>Favorite Musicians</h3>
+						<li data-role="button">Pearl Jam</li>
+						<li data-role="button">Stone Temple Pilots</li>
+						<li data-role="button">Led Zeppelin</li>
+						<li data-role="button">Bob Marley</li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Brands Page -->
+		<div data-role="page" id="brands" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html"><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div data-role="header" data-theme="a">
+				<h4>Brands</h4>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-filter="true">
+					<li>
+						<a href="http://www.smithbrothers.net/">
+						<img src="img/smithbros.png" />
+						<h3>Smith Brothers of Berne</h3>
+						<p>Personalized living room furniture made in the Swiss-Amish tradition.</p>
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.serta.com/index.html">
+						<img src="img/serta.png" />
+						<h3>Serta Bedding</h3>
+						<p>We make the World's Best Mattress!</p>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.hookerfurniture.com/">
+						<img src="img/hooker.png" />
+						<h3>Hooker Furniture</h3>
+						<p>Home Furniture for Every Lifestyle.</p>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.lexington.com/collections/henry-link.cfm">
+						<img src="img/henrylink.png" />
+						<h3>Henry Link Trading Co.</h3>
+						<p>For Those who are Collectors at Heart.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role="navbar" data-position="fixed" data-id="home" data-theme="a">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- News Page -->
+		<div data-role="page" id="news" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html"><img src="img/Header.png"></a></h1>			
+			</div>
+			
+			<div data-role="header">
+				<h4>The Latest News</h4>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-filter="true">
+					<li>
+						<a href="http://www.furnituretoday.com/article/559989-Tennessee_s_Henco_Furniture_to_close_as_owner_retires.php">
+						<h3>Tennessee's Henco Furniture to close as owner retires</h3>
+						<p>Henco Furniture will close its sprawling, two-acre showroom.</p>
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.furnituretoday.com/article/559963-Sustainable_Furnishings_Council_has_new_board_membership_structure.php">
+						<h3>Sustainable Furnishings Council has new board!</h3>
+						<p>The Sustainable Furnishings Council plans a comprehensive review and revision of its standards as part of its initiatives for 2013.</p>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.hookerfurniture.com/">
+						<h3>Resistance To Change At Furniture Retail</h3>
+						<p>A major mental construct that has sabotaged many businesses is resistance to change.</p>
+						</a>
+					</li>
+					<li>
+						<a href="http://furninfo.com/Furniture%20World%20Articles/3414">
+						<h3>Bedding Anatomy 103: Foam Used In Mattresses</h3>
+						<p>The 9th installment in Furniture World Magazine's Better Bedding & Mattress Sales series continues with a close look at foam.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Form Page -->
+		<div data-role="page" id="addItem" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html"><img src="img/Header.png"></a></h1>
+			</div>			
+			
+				<form action="" id="addForm">
+				
+					<div data-role="fieldcontain"> <!--Creates separation-->
+						<p><strong>Please register your information:</strong></p>
+						<label for="enterfname">First Name:* (required)</label>
+						<input type="text" name="enterfname" id="enterfname" class="required" placeholder="First Name"/>
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Creates separation-->
+						<label for="enterlname">Last Name:* (required)</label>
+						<input type="text" name="enterlname" id="enterlname" placeholder="Last Name" class="required" />
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Creates separation-->
+						<label for="enterpword">Password:</label>
+						<input type="text" name="enterpword" id="enterpword" placeholder="Password"/>
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Creates separation-->
+						<label for="confirmpword">Confirm Password:</label>
+						<input type="text" name="confirmpword" id="confirmpword" placeholder="Confirm Password"/>
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Creates separation-->
+						<label for="enteremail">Email:* (required)</label>
+						<input type="text" name="enteremail" id="enteremail" class="required email" placeholder="youremail@domain.com"/>
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Create Search Field this way-->
+							<label for="mydate">Enter the Date:</label>
+							<input name="mydate" id="mydate" type="date" data-role="datebox"
+							data-options='{"mode": "calbox"}'>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="select-choice-0" class="select ui-select">Category:</label>
+						<select name="select-choice-0" id="select-choice-0" data-native-menu="false">
+							<option data-placeholder="true">Please Select One</option>
+								<option value="appliance">Appliance</option>
+								<option value="bedding">Bedding</option>
+								<option value="fabric">Fabric</option>
+								<option value="flooring">Flooring</option>
+								<option value="furniture">Furniture</option>
+								<option value="lighting">Lighting</option>
+						</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Check all that apply</legend>
+								<input type="checkbox" name="rooms" id="checkbox-1" class="custom" />
+								<label for="checkbox-1">Bathroom</label>
+								<input type="checkbox" name="rooms" id="checkbox-2" class="custom"  />
+								<label for="checkbox-2">Bedroom</label>
+								<input type="checkbox" name="rooms" id="checkbox-3" class="custom"  />
+								<label for="checkbox-3">Dining Room</label>
+								<input type="checkbox" name="rooms" id="checkbox-4" class="custom"  />
+								<label for="checkbox-4">Living Room</label>
+								<input type="checkbox" name="rooms" id="checkbox-5" class="custom"  />
+								<label for="checkbox-5">Kitchen</label>
+						</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Create Range this way-->
+						<label for="pricerange">Price:</label>
+						<input type="range" name="pricerange" id="pricerange" value="0" min="0" max="5000" />
+					</div>
+					
+					<div data-role="fieldcontain"> <!--Create Textarea this way-->
+						<label for="formnotes">Notes:</label>
+						<textarea placeholder="Type Notes here."></textarea>
+					</div>
+					
+					
+					<div data-role="fieldcontain"> 
+						<input type="submit" value="Save Information" data-theme="b" />
+						<br>
+						<input type="reset" value="Reset Information" data-theme="a" />					
+					</div>
+			
+					<a href="#formerrors" id="formerrorslink" data-rel="dialog" data-transistion="pop">Show Errors</a>
+					
+				</form>
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+					<li><a href="#news "data-icon="search" class="ui-btn-active">News</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+		<div data-role="dialog" id="formerrors" data-theme="a">
+			
+			<div data-role="header" data-position="fixed"  data-theme="a">
+				<h1>Missing Fields</h1>			
+			</div>
+			
+			<div data role="content" data-theme="a">
+				<ul>
+					<li>Test</li>
+				</ul>
+			</div>
+		</div>
+			
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body> 
+</html>

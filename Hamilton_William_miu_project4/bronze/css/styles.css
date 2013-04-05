@@ -1,0 +1,88 @@
+/* 
+William Hamilton
+VFW 0113 Project 4
+CSS Stylesheet for additem.html and index.html
+*/
+body {
+	background: #C9D4D9;
+}
+
+#feature {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#brands .ui-grid-a div {
+	text-align: center;
+}
+
+/*
+h1 {
+	font: bold;
+	font-family: Times;
+	margin-left: 0px;
+	padding: 5px;
+	border: 2px solid #79382a;
+	width: 300px;
+	color: #666868;
+	text-align: center;
+}
+
+*/
+
+
+h2 {
+	margin-left: 20px;
+	padding: 5px;
+	font-weight: : bold;
+	font-family: Cooper Black, sans-serif, Times;
+	border: 1px solid #79382a;
+	width: 225px;
+	color: #0066a5;
+	text-align: center;
+}
+
+p {
+	font-family: Arial, Times, serif;
+	font-style: italic;
+	font-size: 14
+	color: #000000;
+}
+
+label {
+	color: #f3750e;
+}
+
+
+legend {
+	font-family: Arial, Times, serif;
+	text-shadow: 3px 3px 3px #666868;
+	outline: 1px dotted #79382a;
+	color: #0066a5;
+}
+
+li {
+	color: #f3750e;
+	font-family: Arial, Times, serif; 
+}
+
+li:focus{color:aqua;}
+
+fieldset {
+	line-height: 20px;
+}
+
+textarea {
+	display: block;
+}
+
+textarea:focus{color:#0067a6;}
+
+
+
+a {
+	margin: 5px;
+	
+}

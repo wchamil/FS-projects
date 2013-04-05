@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- William Hamilton -->
+<!-- MIU 1302 -->
+<!-- Project 3 for MIU -->
+<!-- INDEX.HTML document -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<!--Document Title-->
+		<title>Home Design App</title>
+		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" href="css/themes/bronze_miu.min.css" />
+		<!--Modernizr-->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+		
+	</head>
+	
+	<!-- Document Body -->
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html">UR Designs</a></h1>			
+			</div>
+			
+			<div id="feature">
+				<!-- Link to additem.html HTML page -->
+				<a href="additem.html"><img src="img/Feature.png"></a>
+			</div>
+			
+			<div data-role="listview" data-filter="true">
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Browse other items</h3>
+						
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Appliance</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Bedding</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Fabric</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Flooring</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Furniture</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a"><a href="error.html">Lighting</a></li>
+				</nav>
+			</div>
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="page" id="info">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html">UR Designs</a></h1>			
+			</div>
+			
+			<div>
+				<nav>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="#credits">Credits</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="#author">Author Info</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="../gold/index.html">Gold App</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="https://github.com/wchamil/mdv-projects/tree/gh_pages/Hamilton_William_miu_project4/bronze">Bronze gh-pages</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="https://github.com/wchamil/mdv-projects/tree/gh_pages/Hamilton_William_miu_project4/gold">Gold gh-pages</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="https://github.com/wchamil/mdv-projects">Github Repo</a></li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="page" id="credits">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html">UR Designs</a></h1>			
+			</div>
+			
+			<div>
+				<nav>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.smithbrothers.net/">Smith Brothers of Berne</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.hookerfurniture.com/">Hooker Furniture</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.serta.com/index.html">Serta Bedding</a></li>
+					<li data-role="button" data-icon="arrow-r" data-iconpos="right"><a href="http://www.lexington.com/">Lexington Home Brands</a></li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="page" id="author">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html">UR Designs</a></h1>			
+			</div>
+			
+			<div data-role="listview">
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Name</h3>
+						<li data-role="button">William Cutler Hamilton</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Hobbies</h3>
+						<li data-role="button">Cooking</li>
+						<li data-role="button">Brewing Beer</li>
+						<li data-role="button">Politics</li>
+						<li data-role="button">Video Games</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Favorite Movies</h3>
+						<li data-role="button">Goodfellas</li>
+						<li data-role="button">Bullitt</li>
+						<li data-role="button">Inception</li>
+						<li data-role="button">The Dark Knight</li>
+				</nav>
+				<nav data-role="collapsible" data-collapsed="true" data-theme="a">
+					<h3>Favorite Musicians</h3>
+						<li data-role="button">Pearl Jam</li>
+						<li data-role="button">Stone Temple Pilots</li>
+						<li data-role="button">Led Zeppelin</li>
+						<li data-role="button">Bob Marley</li>
+				</nav>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="page" id="brands">
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h1><a href="index.html">UR Designs</a></h1>			
+			</div>
+			
+			<div data-role="header">
+				<h4>Brands</h4>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><img src="img/smithbros.png" class="brands_img"><a href="http://www.smithbrothers.net/"></a></div>
+				<div class="ui-block-b"><img src="img/serta.png"><a href="http://www.serta.com/index.html" class="brands_img"></a></div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a href="http://www.hookerfurniture.com/"><img src="img/hooker.png" class="brands_img"></a></div>
+				<div class="ui-block-b"><img src="img/henrylink.png" class="brands_img"><a href="http://www.lexington.com/collections/henry-link.cfm"></a></div>
+			</div>
+			
+			
+			<div data-role="navbar" data-position="fixed" data-id="home">
+				<ul>
+					<li><a href="#home" data-icon="star" class="ui-btn-active">Home</a></li>
+					<li><a href="#info" data-icon="info" class="ui-btn-active">About</a></li>
+					<li><a href="#brands "data-icon="grid" class="ui-btn-active">Brands</a></li>
+				</ul>
+			</div>
+		</div>
+			
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	</body> 
+</html>
